@@ -1,0 +1,23 @@
+#actorsInform {
+    padding-top: 140px;
+    .actorsInform {
+        display: flex;
+        align-items: flex-start;
+
+
+        &--img {
+            padding: 4px;
+            border: 2px solid black;
+            width: 362px;
+            height: 482px;
+            border-radius: 10px;
+            margin:  0 50px;
+
+            img {
+                border-radius: 10px;
+                width: 350px;
+                height: 470px;
+            }
+        }
+    }
+}

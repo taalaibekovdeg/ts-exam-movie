@@ -1,0 +1,116 @@
+#detailPage {
+    position: relative;
+  padding: 60px 0;
+min-height: 70vh;
+
+  &:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(3px);
+    z-index: 0;
+  }
+
+
+  .detailPage {
+    display: flex;
+    padding:  0;
+    position: relative;
+    z-index: 3;
+    margin-top: 100px;
+
+    img {
+      border-radius: 10px;
+      //box-shadow: 0 0 100px green;
+      transition: .7s;
+
+      &:hover{
+        transform: scale(0.9);
+        -webkit-box-shadow:20px -23px 50px 3px #ff0000 ;
+        -moz-box-shadow:20px -23px 50px 3px #ff0000 ;
+        box-shadow:20px -23px 50px 3px #ff0000 ;
+      }
+    }
+
+
+    &--text {
+     padding-left: 10%;
+
+      h3 {
+       
+      }
+      h4 {
+        margin: 20px 0;
+      }
+      p {
+        font-weight: bold;
+        margin: 25px 0;
+        width: 679px;
+      }
+
+      &__title {
+        display: flex;
+        align-items: center;
+
+        h4{
+        }
+
+
+        &--block {
+          width: 70px;
+          height: 70px;
+          //background: white;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          position: relative;
+          justify-content: center;
+          //border: 2px solid #51c1ff;
+
+          h3{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            background: black;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+          }
+        }
+
+        h4 {
+          font-size: 16px;
+          margin: 0 5px;
+        }
+        button{
+          border-radius: 50%;
+          width: 35px;
+          height: 35px;
+          background: #51c1ff;
+          display: flex;
+          align-items: center;
+          border: navajowhite;
+          justify-content: center;
+          margin-left: 30px;
+          color: white;
+           transition: .7s;
+
+        }
+        button:hover{
+          background: green;
+          color: #51c1ff;
+          box-shadow: 0 0  90px green;
+        }
+
+      }
+    }
+    h3{
+      //color: #51c1ff;
+    }
+  }
+}

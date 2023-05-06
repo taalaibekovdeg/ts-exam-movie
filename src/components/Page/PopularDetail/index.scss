@@ -1,0 +1,37 @@
+.popularDetail {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border:  1px solid black;
+    height: 430px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 30px;
+    padding: 8px 15px;
+    box-shadow: 3px 3px 19px black;
+    transition: .7s;
+
+    &:hover {
+        box-shadow: 11px 10px 16px  black;
+        transform: translateY(-5px);
+    }
+
+    img {
+        width: 230px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 5px;
+        
+    }
+
+    h3 {
+        font-size: 15px;
+        margin: 10px 0;
+        font-family: "Foldit", sans-serif;
+    }
+    
+
+}
