@@ -13,24 +13,18 @@ const Header = () => {
     const [click, setClick] = useState(false)
 
 
-        const handleChane = (e: React.ChangeEvent<any>) => {
+        
+    const handleChane = (e: React.ChangeEvent<any>) => {
         dispatch(LanguageContext(e.target.value))
     }
     const dispatch = useAppDispatch()
 
     const navigate = useNavigate()
 
-    const [value,setValue] = useState('')
+    
 
-    const navigateToResult = () => {
-if (value.trim() !== ''){
-     navigate(`/informResult/${value}`)
-}
-setValue('')
-}
-const handleChangeInput = (e: React.ChangeEvent<any>) => {
-     setValue(e.target.value) 
-}
+
+
 
     const { dark} = useAppSelector(s  => s.DetailSlice)
 
@@ -62,10 +56,10 @@ const handleChangeInput = (e: React.ChangeEvent<any>) => {
                             color: click? "": "white"
                         }
                         }/>
-                        <form onSubmit={navigateToResult}>
+                        <form>
                             <label>
                             <input
-                        onChange={handleChangeInput}
+                        onChange={(e) => navigate(`/informResult/${e.target.value}`)}
                         type="search" placeholder="search" style={{
                             width: click ? "200px" : "",
                             height: click ? "30px" : "",
