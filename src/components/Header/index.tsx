@@ -21,7 +21,9 @@ const Header = () => {
 
     const navigate = useNavigate()
 
-    
+    const clickSubmit = (e: any) => {
+        e.preventDefault()
+    }
 
 
 
@@ -56,7 +58,7 @@ const Header = () => {
                             color: click? "": "white"
                         }
                         }/>
-                        <form>
+                        <form onSubmit={clickSubmit}>
                             <label>
                             <input
                         onChange={(e) => navigate(`/informResult/${e.target.value}`)}
